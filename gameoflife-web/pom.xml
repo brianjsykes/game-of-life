@@ -40,6 +40,7 @@
                     <stopKey>foo</stopKey>
                     <stopPort>${jetty.stop.port}</stopPort>
                 </configuration>
+
             </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
