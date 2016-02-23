@@ -1,0 +1,101 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gameoflife-web 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> jetty-maven-plugin:7.1.0.v20100505:run (default-cli) @ gameoflife-web >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-web ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ gameoflife-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-web ---
+[INFO] argLine set to -javaagent:/home/brian/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/brian/Projects/game-of-life/gameoflife-web/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.3:testResources (default-testResources) @ gameoflife-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/brian/Projects/game-of-life/gameoflife-web/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameoflife-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< jetty-maven-plugin:7.1.0.v20100505:run (default-cli) @ gameoflife-web <<<
+[INFO] 
+[INFO] --- jetty-maven-plugin:7.1.0.v20100505:run (default-cli) @ gameoflife-web ---
+[INFO] Configuring Jetty for project: gameoflife-web
+[INFO] webAppSourceDirectory /home/brian/Projects/game-of-life/gameoflife-web/src/main/webapp does not exist. Defaulting to /home/brian/Projects/game-of-life/gameoflife-web/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = /home/brian/Projects/game-of-life/gameoflife-web/target/classes
+2016-02-22 19:31:44.772:INFO::Logging to StdErrLog::DEBUG=false via org.eclipse.jetty.util.log.StdErrLog
+[INFO] Context path = /
+[INFO] Tmp directory = /home/brian/Projects/game-of-life/gameoflife-web/target/tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = file:/home/brian/Projects/game-of-life/gameoflife-web/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = /home/brian/Projects/game-of-life/gameoflife-web/src/main/webapp
+[INFO] Starting jetty 7.1.0.v20100505 ...
+2016-02-22 19:31:44.841:INFO::jetty-7.1.0.v20100505
+2016-02-22 19:31:45.965:INFO::No Transaction manager found - if your webapp requires one, please configure one.
+2016-02-22 19:31:47.463:WARN::Skipping PostConstruct annotation on org.springframework.ejb.interceptor.SpringBeanAutowiringInterceptor.autowireBean: has parameters
+2016-02-22 19:31:47.464:WARN::Skipping PreDestroy annotation on org.springframework.ejb.interceptor.SpringBeanAutowiringInterceptor.releaseBean: has parameters
+2016-02-22 19:31:53.221:INFO:/:Initializing Spring FrameworkServlet 'gameoflife' null null
+Feb 22, 2016 7:31:53 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'gameoflife': initialization started
+Feb 22, 2016 7:31:53 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'gameoflife-servlet': startup date [Mon Feb 22 19:31:53 PST 2016]; root of context hierarchy
+Feb 22, 2016 7:31:53 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/gameoflife-servlet.xml]
+Feb 22, 2016 7:31:54 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@676bf22f: defining beans [gameController,homePageController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,view-Resolver]; root of factory hierarchy
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/start] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/start.*] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/start/] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/next] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/next.*] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/next/] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/new] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/new.*] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/game/new/] onto handler [com.wakaleo.gameoflife.webtests.controllers.GameController@27e682c3]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Root mapping to handler [com.wakaleo.gameoflife.webtests.controllers.HomePageController@e92e4ac]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/home] onto handler [com.wakaleo.gameoflife.webtests.controllers.HomePageController@e92e4ac]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/home.*] onto handler [com.wakaleo.gameoflife.webtests.controllers.HomePageController@e92e4ac]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/home/] onto handler [com.wakaleo.gameoflife.webtests.controllers.HomePageController@e92e4ac]
+Feb 22, 2016 7:31:54 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'gameoflife': initialization completed in 1370 ms
+2016-02-22 19:31:54.621:WARN::FAILED SelectChannelConnector@0.0.0.0:9090: java.net.BindException: Address already in use
+2016-02-22 19:31:54.622:WARN::FAILED org.mortbay.jetty.plugin.JettyServer@5511fae9: java.net.BindException: Address already in use
+[INFO] Jetty server exiting.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 16.337s
+[INFO] Finished at: Mon Feb 22 19:31:54 PST 2016
+[INFO] Final Memory: 37M/176M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.mortbay.jetty:jetty-maven-plugin:7.1.0.v20100505:run (default-cli) on project gameoflife-web: Failure: Address already in use -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2016-02-22 19:31:55.879:INFO:/:Destroying Spring FrameworkServlet 'gameoflife' null null
