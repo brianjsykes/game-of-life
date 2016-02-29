@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+ - source: .
+   destination: /var/www/game-of-life
+
+hooks:
+  BeforeInstall:
+    - location: scripts/clean-webdir.sh
+    - location: scripts/jetty-stop.sh
+  AfterInstall:
+    - location: scripts/jetty-start.sh
