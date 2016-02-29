@@ -8,4 +8,5 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install robotframework
 RUN pip install robotframework-selenium2library
 COPY . /tmp/robot
+RUN chmod -R 755 /tmp/robot
 WORKDIR /tmp/robot
