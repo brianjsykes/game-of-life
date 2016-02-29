@@ -9,5 +9,5 @@ hooks:
     - location: scripts/clean-webdir.sh
       runas: root
   AfterInstall:
-    - location: scripts/jetty-start.sh
+    - location: scripts/start.sh
       runas: root
