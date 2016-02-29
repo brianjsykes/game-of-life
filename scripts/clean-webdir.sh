@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf /var/www/game-of-life/*
+rm -rf /tmp/game-of-life/*
