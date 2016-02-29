@@ -1,5 +1,6 @@
 #!/bin/bash
 
+touch /tmp/foo.txt
 cd /tmp/game-of-life
 mvn clean install
 cd gameoflife-web
